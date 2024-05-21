@@ -26,6 +26,7 @@ class WeatherCondition {
       json["list"][3]['main']['temp'].toDouble()];
 
     //somehow the response comes back with 4 days forecast!
+    //also the values returned seem illogical temperature = 292!!, they are still the exact values returned by the API... ¯\_(ツ)_/¯
 
     List<double> allHumidities = [
       json["list"][0]['main']['humidity'].toDouble(),
